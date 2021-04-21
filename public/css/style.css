@@ -693,7 +693,7 @@ footer .footer-link__icon {
     transform: rotate(-360deg);
   }
   to {
-    transform: rotate(Odeg);
+    transform: rotate(O);
   }
 }
 .order {
