@@ -1,0 +1,18 @@
+footer {
+  background: darken($background-dark, 70);
+  color: white;
+  padding: 5vh 5vw;
+  img {
+    filter: brightness(1000);
+    margin-bottom: 2vh;
+  }
+  .footer-link {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin: 2vh 0;
+    &__icon {
+      width: clamp(20px, 7vw, 30px);
+    }
+  }
+}

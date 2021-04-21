@@ -1,0 +1,50 @@
+.hero {
+  height: 40vh;
+  position: relative;
+  &__image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+  &__label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $background-light;
+    border-radius: 50px 50px 0 0;
+    padding: 5vh 10vw 2vh 5vw;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(1px);
+    @media (min-width: 850px) {
+      padding: 10vh 20vw 5vh 20vw;
+    }
+    h1 {
+      font-family: "Shrikhand", cursive;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+#francaise {
+  @include background-image(francaise);
+}
+
+#palette {
+  @include background-image(palette);
+}
+
+#delice {
+  @include background-image(delice);
+}
+
+#note {
+  @include background-image(note);
+}

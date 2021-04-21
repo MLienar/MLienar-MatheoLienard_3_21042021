@@ -1,0 +1,114 @@
+.plate-card {
+  background: white;
+  @include box-shadow;
+  border-radius: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+  height: 12vh;
+  margin-bottom: 2vh;
+  animation: fade-in 700ms both;
+  opacity: 0;
+  &__text {
+    margin: 3vh 5vw;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    h3 {
+      margin-bottom: 1.2vh;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    p {
+      font-size: clamp(13px, 1em + 0.1vh, 16px);
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+  &__price {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: -webkit-fill-available;
+    p {
+      margin: 3vh 5vw;
+      font-weight: 500;
+      font-size: clamp(13px, 1em + 0.1vh, 16px);
+      display: flex;
+      align-items: flex-end;
+      white-space: nowrap;
+    }
+  }
+  &__hover-el {
+    height: 12vh;
+    width: 0;
+    overflow: hidden;
+    background: $color-tertiary;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide-out 500ms both;
+    i {
+      font-size: 1.7em;
+      margin: auto;
+    }
+  }
+  &:hover .plate-card__hover-el {
+    animation: slide-in 500ms both;
+    & i {
+      animation: spinning-check 500ms both;
+    }
+  }
+}
+
+// Animations
+$plates: 9;
+
+@for $x from 2 through $plates {
+  .plate-card:nth-child(#{$x}) {
+    animation-delay: 150ms * ($x - 1);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12vh;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    width: 12vh;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes spinning-check {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(Odeg);
+  }
+}

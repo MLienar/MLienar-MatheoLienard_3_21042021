@@ -1,0 +1,18 @@
+@mixin box-shadow {
+  box-shadow: 1px 2px 10px 4px rgba(0 0 0 / 10%);
+}
+
+@mixin background-image($url) {
+  background-image: url("/images/restaurants/#{$url}.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin gradient-back {
+  background: rgb(196, 34, 214);
+  background: linear-gradient(
+    0deg,
+    rgb(206, 37, 224) 0%,
+    rgb(230, 87, 255) 50%
+  );
+}

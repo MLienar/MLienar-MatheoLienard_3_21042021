@@ -1,0 +1,24 @@
+.menu-section {
+  background: $background-light;
+  padding: 5vh 5vw 0 5vw;
+  display: flex;
+  flex-flow: column nowrap;
+  @media (min-width: 850px) {
+    padding: 5vh 20vw 0 20vw;
+  }
+  &__title {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: clamp(14px, 1em + 0.1vh, 18px);
+    position: relative;
+    &::after {
+      content: "";
+      width: 8vw;
+      height: 2px;
+      background: $color-tertiary;
+      position: absolute;
+      bottom: -1.2vh;
+      left: 0;
+    }
+  }
+}

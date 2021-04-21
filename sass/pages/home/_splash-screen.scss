@@ -1,0 +1,17 @@
+.splash-screen {
+  background: $background-light;
+  display: flex;
+  padding: 6vh 0;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  h1 {
+    font-family: "Roboto", sans-serif;
+    width: 80%;
+  }
+  p {
+    width: 80%;
+    margin: 2vh 0;
+  }
+}

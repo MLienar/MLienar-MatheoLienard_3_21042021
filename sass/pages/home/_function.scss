@@ -1,0 +1,62 @@
+.function {
+  padding: 5vh 5vw;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  @media (min-width: 850px) {
+    padding: 5vh 10vw;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    align-self: flex-start;
+    @media (min-width: 850px) {
+      align-self: center;
+    }
+  }
+  &__container {
+    @include box-shadow;
+    padding: 4vh 5vw;
+    margin: 2vh 0;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    background: $background-light;
+    width: calc(83vw + clamp(10px, 3.5vw, 20px));
+    &--active {
+      background: lighten($color-primary, 35);
+      .function__icon {
+        color: $color-primary;
+      }
+    }
+    @media (min-width: 850px) {
+      max-width: 500px;
+    }
+  }
+  &__pastille {
+    position: absolute;
+    left: clamp(-20px, -7vw, -40px);
+    width: clamp(20px, 7vw, 40px);
+    height: clamp(20px, 7vw, 40px);
+    background: $color-primary;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__icon {
+    color: gray;
+    font-size: 1.5em;
+    margin: 0 2vh;
+  }
+  &__text {
+    font-weight: 500;
+  }
+}

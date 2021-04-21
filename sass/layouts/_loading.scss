@@ -1,0 +1,33 @@
+.loading-screen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  flex-flow: column;
+  background: $background-light;
+  z-index: 9999;
+  top: 0;
+  right: -100vw;
+  animation: fade-out 3000ms both;
+  &__animated {
+    transform: rotate(-90deg);
+    width: clamp(30vw, 70%, 400px);
+  }
+  &__illustration {
+    width: clamp(30vw, 70%, 400px);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    right: 0;
+  }
+  80% {
+    right: 0;
+  }
+  100% {
+    right: -100vw;
+  }
+}

@@ -1,0 +1,22 @@
+@import "./vendors/reset";
+@import "./base/common";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./base/fonts";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./components/buttons";
+@import "./layouts/loading";
+
+// Home Page
+
+@import "./pages/home/city";
+@import "./pages/home/splash-screen";
+@import "./pages/home/function";
+@import "./pages/home/restaurants";
+
+// Restaurants Pages
+@import "./pages/restaurant/hero";
+@import "./pages/restaurant/menu-section";
+@import "./pages/restaurant/plate-card";
+@import "./pages/restaurant/order";

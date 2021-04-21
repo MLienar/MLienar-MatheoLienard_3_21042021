@@ -1,0 +1,12 @@
+// Button Primary
+
+.button-primary {
+  font-weight: 500;
+  color: white;
+  @include gradient-back;
+  padding: 2.5vh 6vw;
+  border-radius: 50px;
+  text-decoration: none;
+  margin: 2vh 0;
+  @include box-shadow;
+}
