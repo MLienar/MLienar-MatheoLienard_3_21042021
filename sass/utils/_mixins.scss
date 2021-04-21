@@ -3,7 +3,7 @@
 }
 
 @mixin background-image($url) {
-  background-image: url("/images/restaurants/#{$url}.jpg");
+  background-image: url("images/restaurants/#{$url}.jpg");
   background-position: center;
   background-size: cover;
 }
