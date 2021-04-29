@@ -9,6 +9,10 @@
     justify-content: space-between;
     align-items: center;
   }
+  @media (min-width: 1100px) {
+    padding: 5vh 5vw;
+    justify-content: flex-start;
+  }
   &__title {
     align-self: flex-start;
     @media (min-width: 850px) {
@@ -34,7 +38,10 @@
       }
     }
     @media (min-width: 850px) {
-      max-width: 500px;
+      max-width: 450px;
+    }
+    @media (min-width: 1100px) {
+      padding: clamp(10px, 4vh, 40px) clamp(20px, 5vw, 40px);
     }
   }
   &__pastille {

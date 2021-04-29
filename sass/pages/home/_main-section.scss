@@ -1,0 +1,20 @@
+@media (min-width: 1100px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 30vh;
+    gap: 0px 0px;
+    grid-template-areas:
+      "splash-screen restaurants"
+      "function restaurants";
+  }
+  .splash-screen {
+    grid-area: splash-screen;
+  }
+  .function {
+    grid-area: function;
+  }
+  .restaurants {
+    grid-area: restaurants;
+  }
+}
