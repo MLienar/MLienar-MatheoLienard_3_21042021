@@ -283,10 +283,15 @@ footer .footer-link__icon {
   z-index: 1;
 }
 .city i {
-  margin-right: 5vw;
+  margin-right: clamp(15px, 5vw, 40px);
 }
-.city p {
+.city input {
   font-weight: 500;
+  outline: none;
+  background: #e7e7e7;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(16px, 1rem + 0.1vh, 20px);
 }
 
 @media (min-width: 1100px) {
@@ -489,9 +494,9 @@ footer .footer-link__icon {
   background: linear-gradient(0deg, #ce25e0 0%, #e657ff 50%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 0;
+  transition: all 0.4s ease-in-out;
 }
 
 #palette {
