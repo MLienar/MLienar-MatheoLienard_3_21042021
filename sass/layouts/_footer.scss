@@ -14,5 +14,10 @@ footer {
     &__icon {
       width: clamp(20px, 7vw, 30px);
     }
+    a {
+      font-family: "Roboto", sans-serif;
+      font-size: clamp(16px, 1em + 0.5vh, 20px);
+      font-weight: 300;
+    }
   }
 }

@@ -9,4 +9,9 @@
   text-decoration: none;
   margin: 2vh 0;
   @include box-shadow;
+  &:hover {
+    filter: brightness(110%);
+    box-shadow: 2px 4px 15px 8px rgba(0 0 0 / 15%);
+    transition: all 0.2s ease-out;
+  }
 }

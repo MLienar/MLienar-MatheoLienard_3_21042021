@@ -227,6 +227,11 @@ footer .footer-link {
 footer .footer-link__icon {
   width: clamp(20px, 7vw, 30px);
 }
+footer .footer-link a {
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(16px, 1em + 0.5vh, 20px);
+  font-weight: 300;
+}
 
 .button-primary {
   font-weight: 500;
@@ -238,6 +243,11 @@ footer .footer-link__icon {
   text-decoration: none;
   margin: 2vh 0;
   box-shadow: 1px 2px 10px 4px rgba(0, 0, 0, 0.1);
+}
+.button-primary:hover {
+  filter: brightness(110%);
+  box-shadow: 2px 4px 15px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-out;
 }
 
 .loading-screen {
