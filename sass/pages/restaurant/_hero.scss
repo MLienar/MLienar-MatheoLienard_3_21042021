@@ -30,6 +30,9 @@
       font-family: "Shrikhand", cursive;
       letter-spacing: 1px;
     }
+    .res-card__icon::before {
+      background: $background-light;
+    }
   }
 }
 
