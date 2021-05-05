@@ -379,11 +379,14 @@ footer .footer-link__icon {
   background: #f6f4f4;
   width: calc(83vw + clamp(10px, 3.5vw, 20px));
 }
-.function__container--active {
+.function__container:hover {
   background: #f2eafb;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
 }
-.function__container--active .function__icon {
+.function__container:hover .function__icon {
   color: #9356dc;
+  transition: all 0.5s ease-in-out;
 }
 @media (min-width: 850px) {
   .function__container {

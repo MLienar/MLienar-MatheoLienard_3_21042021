@@ -31,10 +31,13 @@
     position: relative;
     background: $background-light;
     width: calc(83vw + clamp(10px, 3.5vw, 20px));
-    &--active {
+    &:hover {
       background: lighten($color-primary, 35);
+      transition: all 0.2s ease-out;
+      cursor: pointer;
       .function__icon {
         color: $color-primary;
+        transition: all 0.5s ease-in-out;
       }
     }
     @media (min-width: 850px) {
